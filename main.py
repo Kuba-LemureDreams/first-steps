@@ -59,3 +59,26 @@ if input in overview:
     print(dictionary)
 else:
     print("Input is not in a dictionary!")
+
+"""Zadanie 4"""
+
+op = "Super"
+act = "save"
+
+account = {"id":"1","type":op}
+
+def check_permission(user,permission):
+    if user == "Admin": return True
+    elif user == "Super":
+        if permission != "save":
+            return True
+        else:
+            return False
+    elif user == "Standard":
+        if permission == "read":
+            return True
+        else:
+            return False
+    elif user == "Peasant": return False
+
+print(check_permission(op, act))
