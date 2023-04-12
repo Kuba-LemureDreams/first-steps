@@ -63,10 +63,9 @@ else:
 """Zadanie 4"""
 
 op = "Super"
-act = "save"
+act = "read"
 
 account = {"id":"1","type":op}
-
 def check_permission(user,permission):
     if user == "Admin": return True
     elif user == "Super":
@@ -81,4 +80,4 @@ def check_permission(user,permission):
             return False
     elif user == "Peasant": return False
 
-print(check_permission(op, act))
+print(check_permission(account["type"], act))
