@@ -48,13 +48,13 @@ for x in range(len(users)):
 overview = {"user1": 1, "user2": 2, "user3": "hello"}
 data = {1: "Nie znam", 2: "kto to", "hello": "to ten"}
 
-input = "user1"
+bruh = "user1"
 
 
-if input in overview:
+if bruh in overview:
     for i in range(len(data)):
-        if overview[input] == list(data.keys())[i]:
-            dictionary = {input: data[overview[input]]}
+        if overview[bruh] == list(data.keys())[i]:
+            dictionary = {bruh: data[overview[bruh]]}
 
     print(dictionary)
 else:
@@ -81,3 +81,28 @@ def check_permission(user,permission):
     elif user == "Peasant": return False
 
 print(check_permission(account["type"], act))
+
+"""Zadanie 5"""
+
+bruh = input("Podaj operację: ")
+num1 = float(input("Podaj liczbę: "))
+num2 = float(input("Podaj liczbę: "))
+
+def add(num1,num2):
+    return num1+num2
+
+def subtract(num1,num2):
+    return num1 - num2
+
+def multiply(num1,num2):
+    return num1*num2
+
+def calc(func,num1,num2):
+    if func == "+":
+        return add(num1,num2)
+    elif func == "-":
+        return subtract(num1,num2)
+    elif func == "*":
+        return multiply(num1,num2)
+
+print(calc(bruh,num1,num2))
