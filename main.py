@@ -106,3 +106,7 @@ def calc(func,num1,num2):
         return multiply(num1,num2)
 
 print(calc(bruh,num1,num2))
+
+ """Zadanie 6"""
+
+phone = "123456789"
