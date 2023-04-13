@@ -107,6 +107,10 @@ def calc(func,num1,num2):
 
 print(calc(bruh,num1,num2))
 
- """Zadanie 6"""
+"""Zadanie 6"""
 
 phone = "123456789"
+
+print(phone[0])
+print(phone[7]+phone[8])
+print(phone[3]+phone[4]+phone[5])
